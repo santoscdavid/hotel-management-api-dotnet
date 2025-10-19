@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\DAVID\\source\\repos\\HotelManagement\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C62776AF-F542-4E6A-B23A-78E4F0309F60}|HotelManagement.Application\\HotelManagement.Application.csproj|c:\\users\\david\\source\\repos\\hotelmanagement\\hotelmanagement.application\\applicationdependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C62776AF-F542-4E6A-B23A-78E4F0309F60}|HotelManagement.Application\\HotelManagement.Application.csproj|solutionrelative:hotelmanagement.application\\applicationdependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C62776AF-F542-4E6A-B23A-78E4F0309F60}|HotelManagement.Application\\HotelManagement.Application.csproj|c:\\users\\david\\source\\repos\\hotelmanagement\\hotelmanagement.application\\hotelmanagement.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{C62776AF-F542-4E6A-B23A-78E4F0309F60}|HotelManagement.Application\\HotelManagement.Application.csproj|solutionrelative:hotelmanagement.application\\hotelmanagement.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ApplicationDependencyInjection.cs",
+              "DocumentMoniker": "C:\\Users\\DAVID\\source\\repos\\HotelManagement\\HotelManagement.Application\\ApplicationDependencyInjection.cs",
+              "RelativeDocumentMoniker": "HotelManagement.Application\\ApplicationDependencyInjection.cs",
+              "ToolTip": "C:\\Users\\DAVID\\source\\repos\\HotelManagement\\HotelManagement.Application\\ApplicationDependencyInjection.cs",
+              "RelativeToolTip": "HotelManagement.Application\\ApplicationDependencyInjection.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAABOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-18T15:41:17.855Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "HotelManagement.Application.csproj",
+              "DocumentMoniker": "C:\\Users\\DAVID\\source\\repos\\HotelManagement\\HotelManagement.Application\\HotelManagement.Application.csproj",
+              "RelativeDocumentMoniker": "HotelManagement.Application\\HotelManagement.Application.csproj",
+              "ToolTip": "C:\\Users\\DAVID\\source\\repos\\HotelManagement\\HotelManagement.Application\\HotelManagement.Application.csproj",
+              "RelativeToolTip": "HotelManagement.Application\\HotelManagement.Application.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-10-18T15:41:15.425Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

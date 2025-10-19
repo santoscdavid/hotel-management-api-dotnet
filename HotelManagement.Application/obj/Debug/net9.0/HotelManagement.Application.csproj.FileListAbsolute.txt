@@ -1,0 +1,15 @@
+C:\Users\DAVID\source\repos\HotelManagement\HotelManagement.Application\bin\Debug\net9.0\HotelManagement.Application.deps.json
+C:\Users\DAVID\source\repos\HotelManagement\HotelManagement.Application\bin\Debug\net9.0\HotelManagement.Application.dll
+C:\Users\DAVID\source\repos\HotelManagement\HotelManagement.Application\bin\Debug\net9.0\HotelManagement.Application.pdb
+C:\Users\DAVID\source\repos\HotelManagement\HotelManagement.Application\bin\Debug\net9.0\HotelManagement.Domain.dll
+C:\Users\DAVID\source\repos\HotelManagement\HotelManagement.Application\bin\Debug\net9.0\HotelManagement.Domain.pdb
+C:\Users\DAVID\source\repos\HotelManagement\HotelManagement.Application\obj\Debug\net9.0\HotelManagement.Application.csproj.AssemblyReference.cache
+C:\Users\DAVID\source\repos\HotelManagement\HotelManagement.Application\obj\Debug\net9.0\HotelManagement.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DAVID\source\repos\HotelManagement\HotelManagement.Application\obj\Debug\net9.0\HotelManagement.Application.AssemblyInfoInputs.cache
+C:\Users\DAVID\source\repos\HotelManagement\HotelManagement.Application\obj\Debug\net9.0\HotelManagement.Application.AssemblyInfo.cs
+C:\Users\DAVID\source\repos\HotelManagement\HotelManagement.Application\obj\Debug\net9.0\HotelManagement.Application.csproj.CoreCompileInputs.cache
+C:\Users\DAVID\source\repos\HotelManagement\HotelManagement.Application\obj\Debug\net9.0\HotelMan.6B58BC18.Up2Date
+C:\Users\DAVID\source\repos\HotelManagement\HotelManagement.Application\obj\Debug\net9.0\HotelManagement.Application.dll
+C:\Users\DAVID\source\repos\HotelManagement\HotelManagement.Application\obj\Debug\net9.0\refint\HotelManagement.Application.dll
+C:\Users\DAVID\source\repos\HotelManagement\HotelManagement.Application\obj\Debug\net9.0\HotelManagement.Application.pdb
+C:\Users\DAVID\source\repos\HotelManagement\HotelManagement.Application\obj\Debug\net9.0\ref\HotelManagement.Application.dll

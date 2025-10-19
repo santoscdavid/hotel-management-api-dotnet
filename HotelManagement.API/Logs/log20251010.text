@@ -1,0 +1,90 @@
+2025-10-10 19:09:14.457 -03:00 [ERR] Hosting failed to start
+System.IO.IOException: Failed to bind to address http://127.0.0.1:5001: address already in use.
+ ---> Microsoft.AspNetCore.Connections.AddressInUseException: Normalmente é permitida apenas uma utilização de cada endereço de soquete (protocolo/endereço de rede/porta).
+ ---> System.Net.Sockets.SocketException (10048): Normalmente é permitida apenas uma utilização de cada endereço de soquete (protocolo/endereço de rede/porta).
+   at System.Net.Sockets.Socket.UpdateStatusAfterSocketErrorAndThrowException(SocketError error, Boolean disconnectOnFailure, String callerName)
+   at System.Net.Sockets.Socket.DoBind(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Bind(EndPoint localEP)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportOptions.CreateDefaultBoundListenSocket(EndPoint endpoint)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportFactory.BindAsync(EndPoint endpoint, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Infrastructure.TransportManager.BindAsync(EndPoint endPoint, ConnectionDelegate connectionDelegate, EndpointConfig endpointConfig, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.<>c__DisplayClass28_0`1.<<StartAsync>g__OnBind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.LocalhostListenOptions.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.AddressesStrategy.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.BindAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.StartAsync[TContext](IHttpApplication`1 application, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__14_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+2025-10-10 19:09:43.053 -03:00 [ERR] Hosting failed to start
+System.IO.IOException: Failed to bind to address http://127.0.0.1:5000: address already in use.
+ ---> Microsoft.AspNetCore.Connections.AddressInUseException: Normalmente é permitida apenas uma utilização de cada endereço de soquete (protocolo/endereço de rede/porta).
+ ---> System.Net.Sockets.SocketException (10048): Normalmente é permitida apenas uma utilização de cada endereço de soquete (protocolo/endereço de rede/porta).
+   at System.Net.Sockets.Socket.UpdateStatusAfterSocketErrorAndThrowException(SocketError error, Boolean disconnectOnFailure, String callerName)
+   at System.Net.Sockets.Socket.DoBind(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Bind(EndPoint localEP)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportOptions.CreateDefaultBoundListenSocket(EndPoint endpoint)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportFactory.BindAsync(EndPoint endpoint, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Infrastructure.TransportManager.BindAsync(EndPoint endPoint, ConnectionDelegate connectionDelegate, EndpointConfig endpointConfig, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.<>c__DisplayClass28_0`1.<<StartAsync>g__OnBind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.LocalhostListenOptions.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.AddressesStrategy.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.BindAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.StartAsync[TContext](IHttpApplication`1 application, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__14_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+2025-10-10 19:11:03.653 -03:00 [INF] Now listening on: https://localhost:5000
+2025-10-10 19:11:03.679 -03:00 [INF] Now listening on: http://localhost:5001
+2025-10-10 19:11:03.693 -03:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2025-10-10 19:11:03.772 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-10 19:11:03.773 -03:00 [INF] Hosting environment: Development
+2025-10-10 19:11:03.774 -03:00 [INF] Content root path: C:\Users\DAVID\source\repos\HotelManagement\HotelManagement.API
+2025-10-10 19:11:04.943 -03:00 [INF] Request starting HTTP/2 GET https://localhost:5000/ - null null
+2025-10-10 19:11:05.056 -03:00 [INF] Request finished HTTP/2 GET https://localhost:5000/ - 404 0 null 118.6236ms
+2025-10-10 19:11:05.061 -03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:5000/, Response status code: 404
+2025-10-10 19:11:06.620 -03:00 [INF] Request starting HTTP/2 GET https://localhost:5000/ - null null
+2025-10-10 19:11:06.624 -03:00 [INF] Request finished HTTP/2 GET https://localhost:5000/ - 404 0 null 4.1694ms
+2025-10-10 19:11:06.628 -03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:5000/, Response status code: 404
+2025-10-10 19:11:29.652 -03:00 [INF] Now listening on: https://localhost:5000
+2025-10-10 19:11:29.680 -03:00 [INF] Now listening on: http://localhost:5001
+2025-10-10 19:11:29.685 -03:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2025-10-10 19:11:29.712 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-10 19:11:29.713 -03:00 [INF] Hosting environment: Development
+2025-10-10 19:11:29.714 -03:00 [INF] Content root path: C:\Users\DAVID\source\repos\HotelManagement\HotelManagement.API
+2025-10-10 19:11:30.497 -03:00 [INF] Request starting HTTP/2 GET https://localhost:5000/ - null null
+2025-10-10 19:11:30.585 -03:00 [INF] Request finished HTTP/2 GET https://localhost:5000/ - 301 0 null 91.1038ms
+2025-10-10 19:11:30.589 -03:00 [INF] Request starting HTTP/2 GET https://localhost:5000/index.html - null null
+2025-10-10 19:11:30.641 -03:00 [INF] Request finished HTTP/2 GET https://localhost:5000/index.html - 200 null text/html;charset=utf-8 51.5914ms
+2025-10-10 19:11:30.648 -03:00 [INF] Request starting HTTP/2 GET https://localhost:5000/swagger-ui.css - null null
+2025-10-10 19:11:30.648 -03:00 [INF] Request starting HTTP/2 GET https://localhost:5000/swagger-ui-standalone-preset.js - null null
+2025-10-10 19:11:30.648 -03:00 [INF] Request starting HTTP/2 GET https://localhost:5000/swagger-ui-bundle.js - null null
+2025-10-10 19:11:30.718 -03:00 [INF] Request starting HTTP/2 GET https://localhost:5000/index.js - null null
+2025-10-10 19:11:30.648 -03:00 [INF] Request starting HTTP/2 GET https://localhost:5000/index.css - null null
+2025-10-10 19:11:30.746 -03:00 [INF] Request finished HTTP/2 GET https://localhost:5000/index.js - 200 null application/javascript;charset=utf-8 28.2126ms
+2025-10-10 19:11:30.719 -03:00 [INF] Request starting HTTP/2 GET https://localhost:5000/_framework/aspnetcore-browser-refresh.js - null null
+2025-10-10 19:11:30.729 -03:00 [INF] Request starting HTTP/2 GET https://localhost:5000/_vs/browserLink - null null
+2025-10-10 19:11:30.765 -03:00 [INF] Request finished HTTP/2 GET https://localhost:5000/index.css - 200 152 text/css 117.4103ms
+2025-10-10 19:11:30.843 -03:00 [INF] Request finished HTTP/2 GET https://localhost:5000/_framework/aspnetcore-browser-refresh.js - 200 16523 application/javascript; charset=utf-8 124.1702ms
+2025-10-10 19:11:30.844 -03:00 [INF] Request finished HTTP/2 GET https://localhost:5000/swagger-ui.css - 200 23647 text/css 196.2003ms
+2025-10-10 19:11:30.845 -03:00 [INF] Request finished HTTP/2 GET https://localhost:5000/swagger-ui-standalone-preset.js - 200 77352 text/javascript 197.4718ms
+2025-10-10 19:11:30.859 -03:00 [INF] Request finished HTTP/2 GET https://localhost:5000/swagger-ui-bundle.js - 200 424767 text/javascript 200.6947ms
+2025-10-10 19:11:31.147 -03:00 [INF] Request finished HTTP/2 GET https://localhost:5000/_vs/browserLink - 200 null text/javascript; charset=UTF-8 417.2495ms
+2025-10-10 19:11:31.187 -03:00 [INF] Request starting HTTP/2 GET https://localhost:5000/swagger/v1/swagger.json - null null
+2025-10-10 19:11:31.193 -03:00 [INF] Request finished HTTP/2 GET https://localhost:5000/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 5.6778ms
+2025-10-10 19:11:31.203 -03:00 [INF] Request starting HTTP/2 GET https://localhost:5000/favicon-32x32.png - null null
+2025-10-10 19:11:31.206 -03:00 [INF] Request finished HTTP/2 GET https://localhost:5000/favicon-32x32.png - 200 628 image/png 3.3448ms

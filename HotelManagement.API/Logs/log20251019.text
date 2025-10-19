@@ -1,0 +1,321 @@
+2025-10-19 11:03:04.863 -03:00 [INF] Now listening on: https://localhost:5000
+2025-10-19 11:03:04.923 -03:00 [INF] Now listening on: http://localhost:5001
+2025-10-19 11:03:04.927 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-19 11:03:04.930 -03:00 [INF] Hosting environment: Development
+2025-10-19 11:03:04.932 -03:00 [INF] Content root path: C:\Users\DAVID\source\repos\HotelManagement\HotelManagement.API
+2025-10-19 11:03:06.051 -03:00 [INF] Request starting HTTP/2 GET https://localhost:5000/swagger/v1/swagger.json - null null
+2025-10-19 11:03:06.338 -03:00 [INF] Request finished HTTP/2 GET https://localhost:5000/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 287.9222ms
+2025-10-19 11:03:08.113 -03:00 [INF] Application is shutting down...
+2025-10-19 11:03:22.266 -03:00 [INF] Now listening on: https://localhost:5000
+2025-10-19 11:03:22.341 -03:00 [INF] Now listening on: http://localhost:5001
+2025-10-19 11:03:22.349 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-19 11:03:22.353 -03:00 [INF] Hosting environment: Development
+2025-10-19 11:03:22.355 -03:00 [INF] Content root path: C:\Users\DAVID\source\repos\HotelManagement\HotelManagement.API
+2025-10-19 11:03:22.691 -03:00 [INF] Request starting HTTP/2 GET https://localhost:5000/swagger/v1/swagger.json - null null
+2025-10-19 11:03:22.940 -03:00 [INF] Request finished HTTP/2 GET https://localhost:5000/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 250.2085ms
+2025-10-19 11:03:31.021 -03:00 [INF] Request starting HTTP/2 GET https://localhost:5000/api/hotel - null null
+2025-10-19 11:03:31.045 -03:00 [INF] Executing endpoint 'HotelManagement.API.Controllers.HotelController.GetAll (HotelManagement.API)'
+2025-10-19 11:03:31.064 -03:00 [INF] Route matched with {action = "GetAll", controller = "Hotel"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller HotelManagement.API.Controllers.HotelController (HotelManagement.API).
+2025-10-19 11:03:31.073 -03:00 [WRN] You do not have a valid license key for the Lucky Penny software MediatR. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2025-10-19 11:03:31.083 -03:00 [INF] Executing action method HotelManagement.API.Controllers.HotelController.GetAll (HotelManagement.API) - Validation state: "Valid"
+2025-10-19 11:03:32.423 -03:00 [INF] Executed action HotelManagement.API.Controllers.HotelController.GetAll (HotelManagement.API) in 1352.8552ms
+2025-10-19 11:03:32.428 -03:00 [INF] Executed endpoint 'HotelManagement.API.Controllers.HotelController.GetAll (HotelManagement.API)'
+2025-10-19 11:03:32.433 -03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The entity type 'IDomainEvent' requires a primary key to be defined. If you intended to use a keyless entity type, call 'HasNoKey' in 'OnModelCreating'. For more information on keyless entity types, see https://go.microsoft.com/fwlink/?linkid=2141943.
+   at Microsoft.EntityFrameworkCore.Infrastructure.ModelValidator.ValidateNonNullPrimaryKeys(IModel model, IDiagnosticsLogger`1 logger)
+   at Microsoft.EntityFrameworkCore.Infrastructure.ModelValidator.Validate(IModel model, IDiagnosticsLogger`1 logger)
+   at Microsoft.EntityFrameworkCore.Infrastructure.RelationalModelValidator.Validate(IModel model, IDiagnosticsLogger`1 logger)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Infrastructure.Internal.NpgsqlModelValidator.Validate(IModel model, IDiagnosticsLogger`1 logger)
+   at Microsoft.EntityFrameworkCore.Infrastructure.ModelRuntimeInitializer.Initialize(IModel model, Boolean designTime, IDiagnosticsLogger`1 validationLogger)
+   at Microsoft.EntityFrameworkCore.Infrastructure.ModelSource.CreateModel(DbContext context, ModelCreationDependencies modelCreationDependencies, Boolean designTime)
+   at Microsoft.EntityFrameworkCore.Infrastructure.ModelSource.GetModel(DbContext context, ModelCreationDependencies modelCreationDependencies, Boolean designTime)
+   at Microsoft.EntityFrameworkCore.Internal.DbContextServices.CreateModel(Boolean designTime)
+   at Microsoft.EntityFrameworkCore.Internal.DbContextServices.get_Model()
+   at Microsoft.EntityFrameworkCore.Infrastructure.EntityFrameworkServicesBuilder.<>c.<TryAddCoreServices>b__8_4(IServiceProvider p)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass2_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(ServiceIdentifier serviceIdentifier, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at Microsoft.EntityFrameworkCore.DbContext.get_DbContextDependencies()
+   at Microsoft.EntityFrameworkCore.DbContext.get_ContextServices()
+   at Microsoft.EntityFrameworkCore.DbContext.get_InternalServiceProvider()
+   at Microsoft.EntityFrameworkCore.DbContext.get_DbContextDependencies()
+   at Microsoft.EntityFrameworkCore.DbContext.Set[TEntity]()
+   at HotelManagement.Infra.Repositories.Base.BaseRepository`1..ctor(HotelDbContext context) in C:\Users\DAVID\source\repos\HotelManagement\HotelManagement.Infra\Repositories\Base\BaseRepository.cs:line 12
+   at HotelManagement.Infra.Repositories.HotelRepository..ctor(HotelDbContext context) in C:\Users\DAVID\source\repos\HotelManagement\HotelManagement.Infra\Repositories\HotelRepository.cs:line 11
+   at InvokeStub_HotelRepository..ctor(Object, Span`1)
+   at System.Reflection.MethodBaseInvoker.InvokeWithOneArg(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.RuntimeConstructorInfo.Invoke(BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitDisposeCache(ServiceCallSite transientCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass2_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(ServiceIdentifier serviceIdentifier, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at MediatR.Wrappers.RequestHandlerWrapperImpl`2.<>c__DisplayClass1_0.<Handle>g__Handler|0(CancellationToken t)
+   at MediatR.Wrappers.RequestHandlerWrapperImpl`2.Handle(IRequest`1 request, IServiceProvider serviceProvider, CancellationToken cancellationToken)
+   at MediatR.Mediator.Send[TResponse](IRequest`1 request, CancellationToken cancellationToken)
+   at HotelManagement.API.Controllers.HotelController.GetAll() in C:\Users\DAVID\source\repos\HotelManagement\HotelManagement.API\Controllers\HotelController.cs:line 19
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-10-19 11:03:32.522 -03:00 [INF] Request finished HTTP/2 GET https://localhost:5000/api/hotel - 500 null text/plain; charset=utf-8 1501.0383ms
+2025-10-19 11:05:11.489 -03:00 [INF] Now listening on: https://localhost:5000
+2025-10-19 11:05:11.542 -03:00 [INF] Now listening on: http://localhost:5001
+2025-10-19 11:05:11.546 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-19 11:05:11.549 -03:00 [INF] Hosting environment: Development
+2025-10-19 11:05:11.550 -03:00 [INF] Content root path: C:\Users\DAVID\source\repos\HotelManagement\HotelManagement.API
+2025-10-19 11:05:12.153 -03:00 [INF] Request starting HTTP/2 GET https://localhost:5000/swagger/v1/swagger.json - null null
+2025-10-19 11:05:12.380 -03:00 [INF] Request finished HTTP/2 GET https://localhost:5000/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 229.3976ms
+2025-10-19 11:05:19.053 -03:00 [INF] Request starting HTTP/2 GET https://localhost:5000/api/hotel - null null
+2025-10-19 11:05:19.078 -03:00 [INF] Executing endpoint 'HotelManagement.API.Controllers.HotelController.GetAll (HotelManagement.API)'
+2025-10-19 11:05:19.093 -03:00 [INF] Route matched with {action = "GetAll", controller = "Hotel"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller HotelManagement.API.Controllers.HotelController (HotelManagement.API).
+2025-10-19 11:05:19.101 -03:00 [WRN] You do not have a valid license key for the Lucky Penny software MediatR. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2025-10-19 11:05:19.112 -03:00 [INF] Executing action method HotelManagement.API.Controllers.HotelController.GetAll (HotelManagement.API) - Validation state: "Valid"
+2025-10-19 11:05:21.202 -03:00 [INF] Executed DbCommand (42ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT h."Id", h."Address", h."CreatedAt", h."Email", h."Name", h."PhoneNumber"
+FROM "Hotels" AS h
+2025-10-19 11:05:21.249 -03:00 [INF] Executed action method HotelManagement.API.Controllers.HotelController.GetAll (HotelManagement.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 2127.9204ms.
+2025-10-19 11:05:21.273 -03:00 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+ListSelectIterator`2[[HotelManagement.Domain.Entities.Hotel, HotelManagement.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[HotelManagement.Application.Dtos.Hotels.HotelDto, HotelManagement.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-10-19 11:05:21.336 -03:00 [INF] Executed action HotelManagement.API.Controllers.HotelController.GetAll (HotelManagement.API) in 2236.2524ms
+2025-10-19 11:05:21.342 -03:00 [INF] Executed endpoint 'HotelManagement.API.Controllers.HotelController.GetAll (HotelManagement.API)'
+2025-10-19 11:05:21.360 -03:00 [INF] Request finished HTTP/2 GET https://localhost:5000/api/hotel - 200 null application/json; charset=utf-8 2306.6126ms
+2025-10-19 11:05:54.748 -03:00 [INF] Request starting HTTP/2 POST https://localhost:5000/api/hotel - application/json 105
+2025-10-19 11:05:54.757 -03:00 [INF] Executing endpoint 'HotelManagement.API.Controllers.HotelController.Create (HotelManagement.API)'
+2025-10-19 11:05:54.767 -03:00 [INF] Route matched with {action = "Create", controller = "Hotel"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(HotelManagement.API.DTOs.Request.Hotel.CreateHotelRequest) on controller HotelManagement.API.Controllers.HotelController (HotelManagement.API).
+2025-10-19 11:05:54.818 -03:00 [INF] Executing action method HotelManagement.API.Controllers.HotelController.Create (HotelManagement.API) - Validation state: "Valid"
+2025-10-19 11:05:55.182 -03:00 [INF] Executed DbCommand (94ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?', @p2='?' (DbType = DateTime), @p3='?', @p4='?', @p5='?'], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Hotels" ("Id", "Address", "CreatedAt", "Email", "Name", "PhoneNumber")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+2025-10-19 11:05:55.215 -03:00 [INF] Executed action method HotelManagement.API.Controllers.HotelController.Create (HotelManagement.API), returned result Microsoft.AspNetCore.Mvc.CreatedAtActionResult in 394.5566ms.
+2025-10-19 11:05:55.220 -03:00 [INF] Executing CreatedAtActionResult, writing value of type 'null'.
+2025-10-19 11:05:55.251 -03:00 [INF] Executed action HotelManagement.API.Controllers.HotelController.Create (HotelManagement.API) in 481.4883ms
+2025-10-19 11:05:55.254 -03:00 [INF] Executed endpoint 'HotelManagement.API.Controllers.HotelController.Create (HotelManagement.API)'
+2025-10-19 11:05:55.258 -03:00 [INF] Request finished HTTP/2 POST https://localhost:5000/api/hotel - 201 0 null 509.5539ms
+2025-10-19 11:06:01.985 -03:00 [INF] Request starting HTTP/2 GET https://localhost:5000/api/hotel - null null
+2025-10-19 11:06:01.990 -03:00 [INF] Executing endpoint 'HotelManagement.API.Controllers.HotelController.GetAll (HotelManagement.API)'
+2025-10-19 11:06:01.995 -03:00 [INF] Route matched with {action = "GetAll", controller = "Hotel"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller HotelManagement.API.Controllers.HotelController (HotelManagement.API).
+2025-10-19 11:06:01.998 -03:00 [INF] Executing action method HotelManagement.API.Controllers.HotelController.GetAll (HotelManagement.API) - Validation state: "Valid"
+2025-10-19 11:06:02.006 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT h."Id", h."Address", h."CreatedAt", h."Email", h."Name", h."PhoneNumber"
+FROM "Hotels" AS h
+2025-10-19 11:06:02.033 -03:00 [INF] Executed action method HotelManagement.API.Controllers.HotelController.GetAll (HotelManagement.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 33.4005ms.
+2025-10-19 11:06:02.037 -03:00 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+ListSelectIterator`2[[HotelManagement.Domain.Entities.Hotel, HotelManagement.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[HotelManagement.Application.Dtos.Hotels.HotelDto, HotelManagement.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-10-19 11:06:02.049 -03:00 [INF] Executed action HotelManagement.API.Controllers.HotelController.GetAll (HotelManagement.API) in 51.6704ms
+2025-10-19 11:06:02.052 -03:00 [INF] Executed endpoint 'HotelManagement.API.Controllers.HotelController.GetAll (HotelManagement.API)'
+2025-10-19 11:06:02.055 -03:00 [INF] Request finished HTTP/2 GET https://localhost:5000/api/hotel - 200 null application/json; charset=utf-8 69.3522ms
+2025-10-19 11:06:23.211 -03:00 [INF] Request starting HTTP/2 GET https://localhost:5000/api/hotel/0199fcca-8544-7bfe-8c13-437df2496699 - null null
+2025-10-19 11:06:23.245 -03:00 [INF] Executing endpoint 'HotelManagement.API.Controllers.HotelController.GetById (HotelManagement.API)'
+2025-10-19 11:06:23.250 -03:00 [INF] Route matched with {action = "GetById", controller = "Hotel"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetById(System.Guid) on controller HotelManagement.API.Controllers.HotelController (HotelManagement.API).
+2025-10-19 11:06:23.254 -03:00 [INF] Executing action method HotelManagement.API.Controllers.HotelController.GetById (HotelManagement.API) - Validation state: "Valid"
+2025-10-19 11:06:23.419 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT h."Id", h."Address", h."CreatedAt", h."Email", h."Name", h."PhoneNumber"
+FROM "Hotels" AS h
+WHERE h."Id" = @__p_0
+LIMIT 1
+2025-10-19 11:06:23.424 -03:00 [INF] Executed action method HotelManagement.API.Controllers.HotelController.GetById (HotelManagement.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 167.2985ms.
+2025-10-19 11:06:23.430 -03:00 [INF] Executing OkObjectResult, writing value of type 'HotelManagement.Application.Dtos.Hotels.HotelDto'.
+2025-10-19 11:06:23.433 -03:00 [INF] Executed action HotelManagement.API.Controllers.HotelController.GetById (HotelManagement.API) in 180.1793ms
+2025-10-19 11:06:23.436 -03:00 [INF] Executed endpoint 'HotelManagement.API.Controllers.HotelController.GetById (HotelManagement.API)'
+2025-10-19 11:06:23.439 -03:00 [INF] Request finished HTTP/2 GET https://localhost:5000/api/hotel/0199fcca-8544-7bfe-8c13-437df2496699 - 200 null application/json; charset=utf-8 228.1083ms
+2025-10-19 11:06:49.371 -03:00 [INF] Request starting HTTP/2 PUT https://localhost:5000/api/hotel/0199fcca-8544-7bfe-8c13-437df2496699 - application/json 32
+2025-10-19 11:06:49.376 -03:00 [INF] Executing endpoint 'HotelManagement.API.Controllers.HotelController.Update (HotelManagement.API)'
+2025-10-19 11:06:49.380 -03:00 [INF] Route matched with {action = "Update", controller = "Hotel"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Update(System.Guid, HotelManagement.API.DTOs.Request.Hotel.UpdateHotelRequest) on controller HotelManagement.API.Controllers.HotelController (HotelManagement.API).
+2025-10-19 11:06:49.387 -03:00 [INF] Executing action method HotelManagement.API.Controllers.HotelController.Update (HotelManagement.API) - Validation state: "Valid"
+2025-10-19 11:06:49.395 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT h."Id", h."Address", h."CreatedAt", h."Email", h."Name", h."PhoneNumber"
+FROM "Hotels" AS h
+WHERE h."Id" = @__p_0
+LIMIT 1
+2025-10-19 11:06:49.427 -03:00 [INF] Executed DbCommand (9ms) [Parameters=[@p5='?' (DbType = Guid), @p0='?', @p1='?' (DbType = DateTime), @p2='?', @p3='?', @p4='?'], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Hotels" SET "Address" = @p0, "CreatedAt" = @p1, "Email" = @p2, "Name" = @p3, "PhoneNumber" = @p4
+WHERE "Id" = @p5;
+2025-10-19 11:06:49.433 -03:00 [INF] Executed action method HotelManagement.API.Controllers.HotelController.Update (HotelManagement.API), returned result Microsoft.AspNetCore.Mvc.NoContentResult in 43.4669ms.
+2025-10-19 11:06:49.442 -03:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2025-10-19 11:06:49.445 -03:00 [INF] Executed action HotelManagement.API.Controllers.HotelController.Update (HotelManagement.API) in 60.8994ms
+2025-10-19 11:06:49.447 -03:00 [INF] Executed endpoint 'HotelManagement.API.Controllers.HotelController.Update (HotelManagement.API)'
+2025-10-19 11:06:49.451 -03:00 [INF] Request finished HTTP/2 PUT https://localhost:5000/api/hotel/0199fcca-8544-7bfe-8c13-437df2496699 - 204 null null 79.8027ms
+2025-10-19 11:06:59.174 -03:00 [INF] Request starting HTTP/2 GET https://localhost:5000/api/hotel/0199fcca-8544-7bfe-8c13-437df2496699 - null null
+2025-10-19 11:06:59.179 -03:00 [INF] Executing endpoint 'HotelManagement.API.Controllers.HotelController.GetById (HotelManagement.API)'
+2025-10-19 11:06:59.182 -03:00 [INF] Route matched with {action = "GetById", controller = "Hotel"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetById(System.Guid) on controller HotelManagement.API.Controllers.HotelController (HotelManagement.API).
+2025-10-19 11:06:59.184 -03:00 [INF] Executing action method HotelManagement.API.Controllers.HotelController.GetById (HotelManagement.API) - Validation state: "Valid"
+2025-10-19 11:06:59.189 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT h."Id", h."Address", h."CreatedAt", h."Email", h."Name", h."PhoneNumber"
+FROM "Hotels" AS h
+WHERE h."Id" = @__p_0
+LIMIT 1
+2025-10-19 11:06:59.193 -03:00 [INF] Executed action method HotelManagement.API.Controllers.HotelController.GetById (HotelManagement.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 5.8883ms.
+2025-10-19 11:06:59.196 -03:00 [INF] Executing OkObjectResult, writing value of type 'HotelManagement.Application.Dtos.Hotels.HotelDto'.
+2025-10-19 11:06:59.199 -03:00 [INF] Executed action HotelManagement.API.Controllers.HotelController.GetById (HotelManagement.API) in 14.3525ms
+2025-10-19 11:06:59.203 -03:00 [INF] Executed endpoint 'HotelManagement.API.Controllers.HotelController.GetById (HotelManagement.API)'
+2025-10-19 11:06:59.205 -03:00 [INF] Request finished HTTP/2 GET https://localhost:5000/api/hotel/0199fcca-8544-7bfe-8c13-437df2496699 - 200 null application/json; charset=utf-8 30.7747ms
+2025-10-19 11:07:05.535 -03:00 [INF] Request starting HTTP/2 GET https://localhost:5000/api/hotel - null null
+2025-10-19 11:07:05.540 -03:00 [INF] Executing endpoint 'HotelManagement.API.Controllers.HotelController.GetAll (HotelManagement.API)'
+2025-10-19 11:07:05.542 -03:00 [INF] Route matched with {action = "GetAll", controller = "Hotel"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller HotelManagement.API.Controllers.HotelController (HotelManagement.API).
+2025-10-19 11:07:05.545 -03:00 [INF] Executing action method HotelManagement.API.Controllers.HotelController.GetAll (HotelManagement.API) - Validation state: "Valid"
+2025-10-19 11:07:05.551 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT h."Id", h."Address", h."CreatedAt", h."Email", h."Name", h."PhoneNumber"
+FROM "Hotels" AS h
+2025-10-19 11:07:05.554 -03:00 [INF] Executed action method HotelManagement.API.Controllers.HotelController.GetAll (HotelManagement.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 8.1757ms.
+2025-10-19 11:07:05.557 -03:00 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+ListSelectIterator`2[[HotelManagement.Domain.Entities.Hotel, HotelManagement.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[HotelManagement.Application.Dtos.Hotels.HotelDto, HotelManagement.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-10-19 11:07:05.560 -03:00 [INF] Executed action HotelManagement.API.Controllers.HotelController.GetAll (HotelManagement.API) in 15.4257ms
+2025-10-19 11:07:05.564 -03:00 [INF] Executed endpoint 'HotelManagement.API.Controllers.HotelController.GetAll (HotelManagement.API)'
+2025-10-19 11:07:05.566 -03:00 [INF] Request finished HTTP/2 GET https://localhost:5000/api/hotel - 200 null application/json; charset=utf-8 31.7053ms
+2025-10-19 11:07:07.516 -03:00 [INF] Request starting HTTP/2 GET https://localhost:5000/api/hotel - null null
+2025-10-19 11:07:07.520 -03:00 [INF] Executing endpoint 'HotelManagement.API.Controllers.HotelController.GetAll (HotelManagement.API)'
+2025-10-19 11:07:07.523 -03:00 [INF] Route matched with {action = "GetAll", controller = "Hotel"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller HotelManagement.API.Controllers.HotelController (HotelManagement.API).
+2025-10-19 11:07:07.526 -03:00 [INF] Executing action method HotelManagement.API.Controllers.HotelController.GetAll (HotelManagement.API) - Validation state: "Valid"
+2025-10-19 11:07:07.529 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT h."Id", h."Address", h."CreatedAt", h."Email", h."Name", h."PhoneNumber"
+FROM "Hotels" AS h
+2025-10-19 11:07:07.533 -03:00 [INF] Executed action method HotelManagement.API.Controllers.HotelController.GetAll (HotelManagement.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 5.1692ms.
+2025-10-19 11:07:07.536 -03:00 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+ListSelectIterator`2[[HotelManagement.Domain.Entities.Hotel, HotelManagement.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[HotelManagement.Application.Dtos.Hotels.HotelDto, HotelManagement.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-10-19 11:07:07.540 -03:00 [INF] Executed action HotelManagement.API.Controllers.HotelController.GetAll (HotelManagement.API) in 14.0635ms
+2025-10-19 11:07:07.543 -03:00 [INF] Executed endpoint 'HotelManagement.API.Controllers.HotelController.GetAll (HotelManagement.API)'
+2025-10-19 11:07:07.545 -03:00 [INF] Request finished HTTP/2 GET https://localhost:5000/api/hotel - 200 null application/json; charset=utf-8 29.034ms
+2025-10-19 11:08:32.563 -03:00 [INF] Request starting HTTP/2 POST https://localhost:5000/api/hotel - application/json 105
+2025-10-19 11:08:32.573 -03:00 [INF] Executing endpoint 'HotelManagement.API.Controllers.HotelController.Create (HotelManagement.API)'
+2025-10-19 11:08:32.575 -03:00 [INF] Route matched with {action = "Create", controller = "Hotel"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(HotelManagement.API.DTOs.Request.Hotel.CreateHotelRequest) on controller HotelManagement.API.Controllers.HotelController (HotelManagement.API).
+2025-10-19 11:08:32.580 -03:00 [INF] Executing action method HotelManagement.API.Controllers.HotelController.Create (HotelManagement.API) - Validation state: "Valid"
+2025-10-19 11:08:32.588 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?', @p2='?' (DbType = DateTime), @p3='?', @p4='?', @p5='?'], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Hotels" ("Id", "Address", "CreatedAt", "Email", "Name", "PhoneNumber")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+2025-10-19 11:08:32.593 -03:00 [INF] Executed action method HotelManagement.API.Controllers.HotelController.Create (HotelManagement.API), returned result Microsoft.AspNetCore.Mvc.CreatedAtActionResult in 10.0403ms.
+2025-10-19 11:08:32.599 -03:00 [INF] Executing CreatedAtActionResult, writing value of type 'null'.
+2025-10-19 11:08:32.603 -03:00 [INF] Executed action HotelManagement.API.Controllers.HotelController.Create (HotelManagement.API) in 24.0565ms
+2025-10-19 11:08:32.607 -03:00 [INF] Executed endpoint 'HotelManagement.API.Controllers.HotelController.Create (HotelManagement.API)'
+2025-10-19 11:08:32.611 -03:00 [INF] Request finished HTTP/2 POST https://localhost:5000/api/hotel - 201 0 null 47.907ms
+2025-10-19 11:08:38.751 -03:00 [INF] Request starting HTTP/2 GET https://localhost:5000/api/hotel - null null
+2025-10-19 11:08:38.758 -03:00 [INF] Executing endpoint 'HotelManagement.API.Controllers.HotelController.GetAll (HotelManagement.API)'
+2025-10-19 11:08:38.760 -03:00 [INF] Route matched with {action = "GetAll", controller = "Hotel"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller HotelManagement.API.Controllers.HotelController (HotelManagement.API).
+2025-10-19 11:08:38.765 -03:00 [INF] Executing action method HotelManagement.API.Controllers.HotelController.GetAll (HotelManagement.API) - Validation state: "Valid"
+2025-10-19 11:08:38.769 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT h."Id", h."Address", h."CreatedAt", h."Email", h."Name", h."PhoneNumber"
+FROM "Hotels" AS h
+2025-10-19 11:08:38.774 -03:00 [INF] Executed action method HotelManagement.API.Controllers.HotelController.GetAll (HotelManagement.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 7.2737ms.
+2025-10-19 11:08:38.779 -03:00 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+ListSelectIterator`2[[HotelManagement.Domain.Entities.Hotel, HotelManagement.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[HotelManagement.Application.Dtos.Hotels.HotelDto, HotelManagement.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-10-19 11:08:38.784 -03:00 [INF] Executed action HotelManagement.API.Controllers.HotelController.GetAll (HotelManagement.API) in 19.3382ms
+2025-10-19 11:08:38.788 -03:00 [INF] Executed endpoint 'HotelManagement.API.Controllers.HotelController.GetAll (HotelManagement.API)'
+2025-10-19 11:08:38.791 -03:00 [INF] Request finished HTTP/2 GET https://localhost:5000/api/hotel - 200 null application/json; charset=utf-8 39.7579ms
+2025-10-19 11:09:29.568 -03:00 [INF] Request starting HTTP/2 PUT https://localhost:5000/api/hotel/0199fccc-ed4a-7924-8820-f21a62a17e05 - application/json 79
+2025-10-19 11:09:29.579 -03:00 [INF] Executing endpoint 'HotelManagement.API.Controllers.HotelController.Update (HotelManagement.API)'
+2025-10-19 11:09:29.581 -03:00 [INF] Route matched with {action = "Update", controller = "Hotel"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Update(System.Guid, HotelManagement.API.DTOs.Request.Hotel.UpdateHotelRequest) on controller HotelManagement.API.Controllers.HotelController (HotelManagement.API).
+2025-10-19 11:09:29.587 -03:00 [INF] Executing action method HotelManagement.API.Controllers.HotelController.Update (HotelManagement.API) - Validation state: "Valid"
+2025-10-19 11:09:29.592 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT h."Id", h."Address", h."CreatedAt", h."Email", h."Name", h."PhoneNumber"
+FROM "Hotels" AS h
+WHERE h."Id" = @__p_0
+LIMIT 1
+2025-10-19 11:09:29.601 -03:00 [INF] Executed DbCommand (2ms) [Parameters=[@p5='?' (DbType = Guid), @p0='?', @p1='?' (DbType = DateTime), @p2='?', @p3='?', @p4='?'], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Hotels" SET "Address" = @p0, "CreatedAt" = @p1, "Email" = @p2, "Name" = @p3, "PhoneNumber" = @p4
+WHERE "Id" = @p5;
+2025-10-19 11:09:29.606 -03:00 [INF] Executed action method HotelManagement.API.Controllers.HotelController.Update (HotelManagement.API), returned result Microsoft.AspNetCore.Mvc.NoContentResult in 16.7499ms.
+2025-10-19 11:09:29.612 -03:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2025-10-19 11:09:29.615 -03:00 [INF] Executed action HotelManagement.API.Controllers.HotelController.Update (HotelManagement.API) in 30.2521ms
+2025-10-19 11:09:29.620 -03:00 [INF] Executed endpoint 'HotelManagement.API.Controllers.HotelController.Update (HotelManagement.API)'
+2025-10-19 11:09:29.624 -03:00 [INF] Request finished HTTP/2 PUT https://localhost:5000/api/hotel/0199fccc-ed4a-7924-8820-f21a62a17e05 - 204 null null 55.5229ms
+2025-10-19 11:09:34.863 -03:00 [INF] Request starting HTTP/2 GET https://localhost:5000/api/hotel - null null
+2025-10-19 11:09:34.870 -03:00 [INF] Executing endpoint 'HotelManagement.API.Controllers.HotelController.GetAll (HotelManagement.API)'
+2025-10-19 11:09:34.872 -03:00 [INF] Route matched with {action = "GetAll", controller = "Hotel"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller HotelManagement.API.Controllers.HotelController (HotelManagement.API).
+2025-10-19 11:09:34.876 -03:00 [INF] Executing action method HotelManagement.API.Controllers.HotelController.GetAll (HotelManagement.API) - Validation state: "Valid"
+2025-10-19 11:09:34.881 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT h."Id", h."Address", h."CreatedAt", h."Email", h."Name", h."PhoneNumber"
+FROM "Hotels" AS h
+2025-10-19 11:09:34.887 -03:00 [INF] Executed action method HotelManagement.API.Controllers.HotelController.GetAll (HotelManagement.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 7.5069ms.
+2025-10-19 11:09:34.891 -03:00 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+ListSelectIterator`2[[HotelManagement.Domain.Entities.Hotel, HotelManagement.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[HotelManagement.Application.Dtos.Hotels.HotelDto, HotelManagement.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-10-19 11:09:34.896 -03:00 [INF] Executed action HotelManagement.API.Controllers.HotelController.GetAll (HotelManagement.API) in 20.3659ms
+2025-10-19 11:09:34.901 -03:00 [INF] Executed endpoint 'HotelManagement.API.Controllers.HotelController.GetAll (HotelManagement.API)'
+2025-10-19 11:09:34.904 -03:00 [INF] Request finished HTTP/2 GET https://localhost:5000/api/hotel - 200 null application/json; charset=utf-8 40.8032ms
+2025-10-19 11:09:56.013 -03:00 [INF] Request starting HTTP/2 GET https://localhost:5000/api/guest/0199fccc-ed4a-7924-8820-f21a62a17e05 - null null
+2025-10-19 11:09:56.021 -03:00 [INF] Executing endpoint 'HotelManagement.API.Controllers.GuestController.GetById (HotelManagement.API)'
+2025-10-19 11:09:56.026 -03:00 [INF] Route matched with {action = "GetById", controller = "Guest"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetById(System.Guid) on controller HotelManagement.API.Controllers.GuestController (HotelManagement.API).
+2025-10-19 11:09:56.030 -03:00 [INF] Executing action method HotelManagement.API.Controllers.GuestController.GetById (HotelManagement.API) - Validation state: "Valid"
+2025-10-19 11:09:56.050 -03:00 [INF] Executed DbCommand (5ms) [Parameters=[@__p_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT g."Id", g."CreatedAt", g."DateOfBirth", g."DocumentNumber", g."Email", g."FullName", g."PhoneNumber"
+FROM "Guests" AS g
+WHERE g."Id" = @__p_0
+LIMIT 1
+2025-10-19 11:09:56.056 -03:00 [INF] Executed action method HotelManagement.API.Controllers.GuestController.GetById (HotelManagement.API), returned result Microsoft.AspNetCore.Mvc.NotFoundResult in 22.8727ms.
+2025-10-19 11:09:56.062 -03:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2025-10-19 11:09:56.097 -03:00 [INF] Executed action HotelManagement.API.Controllers.GuestController.GetById (HotelManagement.API) in 66.792ms
+2025-10-19 11:09:56.100 -03:00 [INF] Executed endpoint 'HotelManagement.API.Controllers.GuestController.GetById (HotelManagement.API)'
+2025-10-19 11:09:56.104 -03:00 [INF] Request finished HTTP/2 GET https://localhost:5000/api/guest/0199fccc-ed4a-7924-8820-f21a62a17e05 - 404 null application/problem+json; charset=utf-8 91.5981ms
+2025-10-19 11:10:04.671 -03:00 [INF] Request starting HTTP/2 GET https://localhost:5000/api/guest - null null
+2025-10-19 11:10:04.677 -03:00 [INF] Executing endpoint 'HotelManagement.API.Controllers.GuestController.GetAll (HotelManagement.API)'
+2025-10-19 11:10:04.682 -03:00 [INF] Route matched with {action = "GetAll", controller = "Guest"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller HotelManagement.API.Controllers.GuestController (HotelManagement.API).
+2025-10-19 11:10:04.687 -03:00 [INF] Executing action method HotelManagement.API.Controllers.GuestController.GetAll (HotelManagement.API) - Validation state: "Valid"
+2025-10-19 11:10:04.698 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT g."Id", g."CreatedAt", g."DateOfBirth", g."DocumentNumber", g."Email", g."FullName", g."PhoneNumber"
+FROM "Guests" AS g
+2025-10-19 11:10:04.704 -03:00 [INF] Executed action method HotelManagement.API.Controllers.GuestController.GetAll (HotelManagement.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 15.2127ms.
+2025-10-19 11:10:04.710 -03:00 [INF] Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+ListSelectIterator`2[[HotelManagement.Domain.Entities.Guest, HotelManagement.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[HotelManagement.Application.Dtos.Guests.GuestDto, HotelManagement.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-10-19 11:10:04.716 -03:00 [INF] Executed action HotelManagement.API.Controllers.GuestController.GetAll (HotelManagement.API) in 29.0265ms
+2025-10-19 11:10:04.720 -03:00 [INF] Executed endpoint 'HotelManagement.API.Controllers.GuestController.GetAll (HotelManagement.API)'
+2025-10-19 11:10:04.724 -03:00 [INF] Request finished HTTP/2 GET https://localhost:5000/api/guest - 200 null application/json; charset=utf-8 52.6945ms
+2025-10-19 11:10:15.976 -03:00 [INF] Request starting HTTP/2 GET https://localhost:5000/api/hotel/0199fccc-ed4a-7924-8820-f21a62a17e05 - null null
+2025-10-19 11:10:15.983 -03:00 [INF] Executing endpoint 'HotelManagement.API.Controllers.HotelController.GetById (HotelManagement.API)'
+2025-10-19 11:10:15.985 -03:00 [INF] Route matched with {action = "GetById", controller = "Hotel"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetById(System.Guid) on controller HotelManagement.API.Controllers.HotelController (HotelManagement.API).
+2025-10-19 11:10:15.990 -03:00 [INF] Executing action method HotelManagement.API.Controllers.HotelController.GetById (HotelManagement.API) - Validation state: "Valid"
+2025-10-19 11:10:15.996 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT h."Id", h."Address", h."CreatedAt", h."Email", h."Name", h."PhoneNumber"
+FROM "Hotels" AS h
+WHERE h."Id" = @__p_0
+LIMIT 1
+2025-10-19 11:10:16.001 -03:00 [INF] Executed action method HotelManagement.API.Controllers.HotelController.GetById (HotelManagement.API), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 8.1563ms.
+2025-10-19 11:10:16.006 -03:00 [INF] Executing OkObjectResult, writing value of type 'HotelManagement.Application.Dtos.Hotels.HotelDto'.
+2025-10-19 11:10:16.010 -03:00 [INF] Executed action HotelManagement.API.Controllers.HotelController.GetById (HotelManagement.API) in 20.4194ms
+2025-10-19 11:10:16.014 -03:00 [INF] Executed endpoint 'HotelManagement.API.Controllers.HotelController.GetById (HotelManagement.API)'
+2025-10-19 11:10:16.017 -03:00 [INF] Request finished HTTP/2 GET https://localhost:5000/api/hotel/0199fccc-ed4a-7924-8820-f21a62a17e05 - 200 null application/json; charset=utf-8 40.7573ms
